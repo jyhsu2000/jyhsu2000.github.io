@@ -14,7 +14,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -30,7 +30,7 @@
             width: 100%;
             display: table;
             font-weight: 100;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Lato Light', sans-serif;
         }
 
         .main-container {
@@ -46,10 +46,16 @@
 
         .title {
             font-size: 96px;
+            font-family: 'Lato', sans-serif;
         }
 
         .donation {
             margin-top: 100px;
+        }
+
+        .donation .message {
+            font-size: 36px;
+            font-family: 'Lato Hairline', sans-serif;
         }
     </style>
 </head>
@@ -58,8 +64,9 @@
     <div class="content">
         <div class="title">It does not work!</div>
         <div class="donation">
-            <p style="font-size: 36px;">
+            <p class="message">
                 Make a donation to fix it.
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
             </p>
 
             <div class="form-group row">
