@@ -15,6 +15,9 @@
 
     <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
     <style>
         html, body {
@@ -30,7 +33,7 @@
             font-family: 'Lato', sans-serif;
         }
 
-        .container {
+        .main-container {
             text-align: center;
             display: table-cell;
             vertical-align: middle;
@@ -44,15 +47,73 @@
         .title {
             font-size: 96px;
         }
+
+        .donation {
+            margin-top: 100px;
+        }
     </style>
 </head>
 <body>
-<div class="container">
+<div class="main-container">
     <div class="content">
         <div class="title">It does not work!</div>
+        <div class="donation">
+            <p style="font-size: 36px;">
+                Make a donation to fix it.
+            </p>
+
+            <div class="form-group row">
+                <label for="address-btc" class="col-2 col-form-label">BTC</label>
+                <div class="col-10 input-group">
+                    <input class="form-control" type="text" value="3R1b93b7MB3ccL1mPKKsTUneQmbtxN9arC" id="address-btc">
+                    <button class="input-group-addon btn" data-clipboard-target="#address-btc" data-toggle="tooltip"
+                            data-placement="right" title="Copy address">
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="address-eth" class="col-2 col-form-label">ETH</label>
+                <div class="col-10 input-group">
+                    <input class="form-control" type="text" value="0xce44364adf7836b4e04035799fe45dc5a3937c03"
+                           id="address-eth">
+                    <button class="input-group-addon btn" data-clipboard-target="#address-eth" data-toggle="tooltip"
+                            data-placement="right" title="Copy address">
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="address-mc" class="col-2 col-form-label">MusicCoin</label>
+                <div class="col-10 input-group">
+                    <input class="form-control" type="text" value="0x547eaa6d53c775684afd5749e6542e6d75402962"
+                           id="address-mc">
+                    <button class="input-group-addon btn" data-clipboard-target="#address-mc" data-toggle="tooltip"
+                            data-placement="right" title="Copy address">
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<!--<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>-->
+<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
 <!--<script src="//cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script>
+    $(function () {
+        new Clipboard('.btn');
+        $('.btn').tooltip();
+    });
+</script>
 </body>
 </html>
