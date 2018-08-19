@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +15,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="icon" type="image/png" href="img/K_256.png"/>
+    <link rel="icon" type="image/png" href="img/K_256.png" />
 
     <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
         }
 
@@ -53,89 +56,121 @@
         }
 
         .donation {
-            margin-top: 100px;
+            margin-top: 10px;
         }
 
         .donation .message {
             font-size: 36px;
             font-family: 'Lato Hairline', sans-serif;
         }
+
+        .profile-photo {
+            height: 200px;
+            width: 200px;
+            background: gray no-repeat center center / contain;
+            background-clip: content-box;
+        }
     </style>
 </head>
-<body>
-<div class="container-fluid main-container">
-    <div class="content">
-        <div class="title">It does not work!</div>
-        <div class="donation">
-            <p class="message">
-                Make a donation to fix it.
-                <i class="fa fa-smile-o" aria-hidden="true"></i>
-            </p>
 
-            <div class="form-group row">
-                <label for="address-btc" class="col-2 col-form-label">BTC</label>
-                <div class="col-10 input-group">
-                    <input class="form-control" type="text" readonly
-                           value="3R1b93b7MB3ccL1mPKKsTUneQmbtxN9arC" id="address-btc">
-                    <button class="input-group-addon btn" data-clipboard-target="#address-btc"
-                            data-toggle="tooltip" data-placement="right" title="Copy address">
-                        <i class="fa fa-clipboard" aria-hidden="true"></i>
-                    </button>
+<body>
+    <div class="container-fluid main-container">
+        <div class="content">
+            <div class="title">KID</div>
+            <div class="d-flex flex-column flex-md-row align-items-md-start">
+                <div class="d-shrink-0 text-center mr-2 d-flex">
+                    <div class="profile-photo img-thumbnail m-auto" style="background-image:url('img/profile.jpg')"></div>
+                </div>
+                <div class="d-flex flex-column" style="min-height: 200px">
+                    <div class="text-center text-md-left">
+                        <span class="h3" style="white-space:nowrap">
+                            <span class="badge badge-primary">Web Developer</span>
+                            <span class="badge badge-primary">Backend Engineer</span>
+                        </span>
+                    </div>
+                    <div class="text-left">
+                        Frameworks
+                        <ul>
+                            <li>Laravel</li>
+                            <li>Spigot</li>
+                            <li>Sponge</li>
+                            <li>... and more</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto text-center text-md-left">
+                        <a href="https://www.facebook.com/MagicYuan7" class="btn btn-outline-primary" target="_blank">
+                            <i class="fab fa-facebook-square"></i> Facebook
+                        </a>
+                        <a href="https://www.linkedin.com/in/jyhsu2000/" class="btn btn-outline-primary" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="address-eth" class="col-2 col-form-label">ETH</label>
-                <div class="col-10 input-group">
-                    <input class="form-control" type="text" readonly
-                           value="0xce44364adf7836b4e04035799fe45dc5a3937c03" id="address-eth">
-                    <button class="input-group-addon btn" data-clipboard-target="#address-eth"
-                            data-toggle="tooltip" data-placement="right" title="Copy address">
-                        <i class="fa fa-clipboard" aria-hidden="true"></i>
-                    </button>
+            <div class="donation">
+                <p class="message">
+                    不知該放啥，就先放個抖內資訊吧ヽ(ﾟ∀ﾟ*)ノ
+                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                </p>
+                <div class="form-group row">
+                    <label for="address-btc" class="col-2 col-form-label">BTC</label>
+                    <div class="col-10 input-group">
+                        <input class="form-control" type="text" readonly value="3R1b93b7MB3ccL1mPKKsTUneQmbtxN9arC" id="address-btc">
+                        <div class="input-group-append">
+                            <button type="button" class="btn" data-clipboard-target="#address-btc" data-toggle="tooltip" data-placement="right" title="Copy address">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="address-eth" class="col-2 col-form-label">ETH</label>
+                    <div class="col-10 input-group">
+                        <input class="form-control" type="text" readonly value="0xce44364adf7836b4e04035799fe45dc5a3937c03" id="address-eth">
+                        <div class="input-group-append">
+                            <button type="button" class="btn" data-clipboard-target="#address-eth" data-toggle="tooltip" data-placement="right" title="Copy address">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="address-mc" class="col-2 col-form-label">Musicoin</label>
+                    <div class="col-10 input-group">
+                        <input class="form-control" type="text" readonly value="0x547eaa6d53c775684afd5749e6542e6d75402962" id="address-mc">
+                        <div class="input-group-append">
+                            <button type="button" class="btn" data-clipboard-target="#address-mc" data-toggle="tooltip" data-placement="right" title="Copy address">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="address-mc" class="col-2 col-form-label">Musicoin</label>
-                <div class="col-10 input-group">
-                    <input class="form-control" type="text" readonly
-                           value="0x547eaa6d53c775684afd5749e6542e6d75402962" id="address-mc">
-                    <button class="input-group-addon btn" data-clipboard-target="#address-mc"
-                            data-toggle="tooltip" data-placement="right" title="Copy address">
-                        <i class="fa fa-clipboard" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="form-group row">
+            <div class="ad">
                 <!-- 超級橫幅廣告 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:728px;height:90px"
-                     data-ad-client="ca-pub-5484239231350534"
-                     data-ad-slot="6449544584"></ins>
+                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5484239231350534" data-ad-slot="6449544584"></ins>
             </div>
         </div>
     </div>
-</div>
-<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-<!--<script src="//cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>-->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!--<script src="//cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script>
-    $(function () {
-        new Clipboard('.btn');
-        $('.btn').tooltip();
-    });
-</script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script>
+        $(function () {
+            new Clipboard('.btn');
+            $('.btn').tooltip();
+        });
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
+
 </html>
