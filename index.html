@@ -26,16 +26,13 @@
 
     <style>
         body {
+            min-height: 100vh;
             font-family: 'Kalam', cursive;
             background-image: url(img/landscape-nature-wilderness-view.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
-        }
-
-        section:first-child {
-            min-height: 100vh;
         }
 
         .white-card {
@@ -66,7 +63,7 @@
 </head>
 
 <body class="d-flex flex-column">
-<section class="container-fluid d-flex flex-column align-items-center justify-content-center">
+<section class="flex-grow-1 container-fluid d-flex flex-column align-items-center justify-content-center">
     <div class="white-card d-flex flex-column flex-md-row align-items-md-start mt-2 p-3" id="profile">
         <div class="d-shrink-0 text-center mr-md-2 d-flex">
             <div class="profile-photo img-thumbnail m-auto" style="background-image:url('img/profile.jpg')"></div>
